@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+article {
+    display: grid;
+    grid-template-columns: 1fr minmax(0,8.5in) 1fr;
+    height: 100vh;
+}
+
+article * {grid-column: 2 / 3;}
