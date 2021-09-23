@@ -5,3 +5,9 @@
     height: 15vw;
     object-fit: cover;
 }
+
+#blogfooter {
+    color: #ffffff8c;
+    font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    text-decoration: none;
+}
