@@ -54,24 +54,43 @@
 
     <!-- Add the content  -->
     <!-- Question & answer container -->
-    <div>
+    <div class="container" id="quiz">
+        <p class="hidden" id="update">
+            Correct! Current streak: <span id=streak>0</span>
+        </p>
+        <div class="row col">
         <p id="question">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est facilis architecto voluptatibus eum excepturi,
             molestiae id eius eaque dolores! Fuga illum, quisquam vero est aliquam iste ratione dolores porro maxime.
         </p>
+        </div>
+        <div class="row">
         <br>
-        <p class="option">
+        <p class="option btn btn-outline-dark">
             Answer A.
         </p>
-        <p class="option">
+        <p class="option btn btn-outline-dark">
             Answer B.
         </p>
-        <p class="option">
+        <p class="option btn btn-outline-dark">
             Answer C.
         </p>
-        <p class="option">Answer D.
-
+        <p class="option btn btn-outline-dark">Answer D.
         </p>
+        </div>
+  
+    </div>
+
+    <!-- Failure section -->
+    <div id="failure" class="container hidden">
+        <h3>GAME OVER &#128546;</h3>
+        <p id="streakUp"></p>
+        <div class="failureButton">
+            <a onclick="window.location.reload()" href="" class="btn btn-primary rounded-pill">Play again</a>
+        </div>
+        <div class="failureButton">
+            <a href="trivia.html" class="btn btn-primary rounded-pill">Check leaderboard</a>
+        </div>
     </div>
 
     <!-- Footer

@@ -11,3 +11,36 @@
     font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     text-decoration: none;
 }
+
+.hidden {
+    display: none;
+}
+
+.leaderboard {
+    text-align: right;
+
+}
+
+.leaderboardName {
+    text-align: right;
+
+}
+
+.option {
+    display: block;
+}
+
+#question {
+    font-weight: 600;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+#update {
+    color: #66A19D;
+}
+
+.failureButton {
+    display: inline-block;
+    color: white;
+}
