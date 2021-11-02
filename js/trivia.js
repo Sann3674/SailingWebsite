@@ -181,7 +181,6 @@ function shuffle(array) {
     return array;
 }
 
-
 //gives a random number from 0 to n (length of object / number of questions we have)
 function assignRandomIndex(length) {
     return Math.floor((Math.random() * (length)));
@@ -214,4 +213,26 @@ function onCorrectClick() {
     }
     updateContainer.classList.remove("hidden");
     populateFull();
+}
+
+//fixing bug where hover state is sticky on touchscreen devices
+//removing class which adds hover behaciour by default
+let firstAnswer = answersContainer[0];
+let secondAnswer = answersContainer[1];
+let thirdAnswer = answersContainer[2];
+let fourthAnswer = answersContainer[3];
+
+let classes = firstAnswer.classList;
+console.log(classes);
+
+firstAnswer.classList.remove('btn-outline-dark:hover');
+firstAnswer.classList.remove('btn:hover');
+
+classes = firstAnswer.classList;
+console.log(classes);
+
+const isTouch = !!("ontouchstart" in window) || window.navigator.msMaxTouchpoints > 0;
+
+if (!isTouch) {
+
 }
