@@ -222,17 +222,16 @@ let secondAnswer = answersContainer[1];
 let thirdAnswer = answersContainer[2];
 let fourthAnswer = answersContainer[3];
 
-let classes = firstAnswer.classList;
-console.log(classes);
+firstAnswer.classList.remove('btn', 'btn-outline-dark');
+secondAnswer.classList.remove('btn', 'btn-outline-dark');
+thirdAnswer.classList.remove('btn', 'btn-outline-dark');
+fourthAnswer.classList.remove('btn', 'btn-outline-dark');
 
-firstAnswer.classList.remove('btn-outline-dark:hover');
-firstAnswer.classList.remove('btn:hover');
-
-classes = firstAnswer.classList;
-console.log(classes);
-
+//adding back class for hover state ONLY when device does not have a touchscreen
 const isTouch = !!("ontouchstart" in window) || window.navigator.msMaxTouchpoints > 0;
-
 if (!isTouch) {
-
+    firstAnswer.classList.add('btn', 'btn-outline-dark');
+    secondAnswer.classList.add('btn', 'btn-outline-dark');
+    thirdAnswer.classList.add('btn', 'btn-outline-dark');
+    fourthAnswer.classList.add('btn', 'btn-outline-dark');
 }
